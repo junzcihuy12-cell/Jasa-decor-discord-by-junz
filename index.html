@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Jasa Discord • Cat Studio 🐱</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- BACKGROUND LUCU -->
+    <div class="bg-lucu">
+        <div class="awan awan1"></div>
+        <div class="awan awan2"></div>
+        <div class="awan awan3"></div>
+        <div class="bintang"></div>
+    </div>
+
+    <!-- SPLASH SCREEN KUCING -->
+    <div class="splash-screen">
+        <div class="splash-content">
+            <div class="kucing-lucu">
+                <div class="kepala">
+                    <div class="telinga kiri"></div>
+                    <div class="telinga kanan"></div>
+                    <div class="mata">
+                        <div class="mata-kiri"></div>
+                        <div class="mata-kanan"></div>
+                    </div>
+                    <div class="hidung"></div>
+                    <div class="mulut"></div>
+                    <div class="kumis kiri"></div>
+                    <div class="kumis kanan"></div>
+                </div>
+                <div class="badan">
+                    <div class="ekor"></div>
+                </div>
+            </div>
+            <h1 class="splash-title">Hai, Aku Junz! 🐱</h1>
+            <p class="splash-subtitle">Selamat Datang di <span>Cat Discord Studio</span></p>
+            <div class="loading-lucu">
+                <div class="bola-wool"></div>
+                <div class="bola-wool"></div>
+                <div class="bola-wool"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING CAT -->
+    <div class="floating-cat" onclick="bukaModalLangsung()">
+        <i class="fas fa-cat"></i>
+        <span class="bubble">Chat yuk! 🐾</span>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <!-- HEADER LUCU -->
+        <div class="header-lucu">
+            <div class="profile-cat">
+                <i class="fas fa-cat"></i>
+            </div>
+            <h1>🐱 <span>CAT DISCORD</span> 🐱</h1>
+            <p>Jasa Setup Discord Imut & Friendly ✨</p>
+            <div class="cat-ears">
+                <div class="ear"></div>
+                <div class="ear"></div>
+            </div>
+        </div>
+
+        <!-- TRUST BADGE LUCU -->
+        <div class="trust-badge-lucu">
+            <i class="fas fa-paw"></i>
+            <span>✨ AMAN & TERPERCAYA ✨</span>
+            <i class="fas fa-paw"></i>
+        </div>
+
+        <!-- STATS LUCU -->
+        <div class="stats-lucu">
+            <div class="stat-item">
+                <i class="fas fa-heart"></i>
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Customer Happy</div>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-crown"></i>
+                <div class="stat-number">5K</div>
+                <div class="stat-label">Termurah</div>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Online</div>
+            </div>
+        </div>
+
+        <!-- SECTION TITLE -->
+        <div class="section-lucu">
+            <i class="fas fa-fish"></i>
+            <h2>Pilih Paket Kesayangan ✨</h2>
+            <i class="fas fa-fish"></i>
+        </div>
+
+        <!-- PAKET LIST -->
+        <div class="paket-container">
+            <!-- PAKET 1 -->
+            <div class="paket-card" onclick="pilihPaket('Paket Rapih', 5000)">
+                <div class="paket-icon" style="background: #FFB6C1;">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="paket-header">
+                    <h3>Paket Rapih</h3>
+                    <div class="harga">5K</div>
+                </div>
+                <ul class="fitur-list">
+                    <li><i class="fas fa-cat"></i> Rapihin semua channel</li>
+                    <li><i class="fas fa-cat"></i> Rename channel biar rapi</li>
+                    <li><i class="fas fa-cat"></i> Tambah 20+ emoji lucu</li>
+                </ul>
+                <div class="fungsi-lucu">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Buat server keliatan rapi & imut!</span>
+                </div>
+                <button class="btn-lucu" onclick="event.stopPropagation(); bukaModal('Paket Rapih', 5000)">
+                    <i class="fas fa-paw"></i> Ambil Paket
+                </button>
+            </div>
+
+            <!-- PAKET 2 -->
+            <div class="paket-card" onclick="pilihPaket('Basic Setup', 10000)">
+                <div class="paket-icon" style="background: #C1E1C1;">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div class="paket-header">
+                    <h3>Basic Setup</h3>
+                    <div class="harga">10K</div>
+                </div>
+                <ul class="fitur-list">
+                    <li><i class="fas fa-cat"></i> Semua fitur Paket 5K</li>
+                    <li><i class="fas fa-cat"></i> 3 Roles lucu</li>
+                    <li><i class="fas fa-cat"></i> Rules & regulations</li>
+                </ul>
+                <div class="fungsi-lucu">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Server jadi teratur & jelas!</span>
+                </div>
+                <button class="btn-lucu" onclick="event.stopPropagation(); bukaModal('Basic Setup', 10000)">
+                    <i class="fas fa-paw"></i> Ambil Paket
+                </button>
+            </div>
+
+            <!-- PAKET 3 -->
+            <div class="paket-card" onclick="pilihPaket('Standard Setup', 15000)">
+                <div class="paket-icon" style="background: #FFE5B4;">
+                    <i class="fas fa-microphone-alt"></i>
+                </div>
+                <div class="paket-header">
+                    <h3>Standard Setup</h3>
+                    <div class="harga">15K</div>
+                </div>
+                <ul class="fitur-list">
+                    <li><i class="fas fa-cat"></i> Semua fitur Paket 10K</li>
+                    <li><i class="fas fa-cat"></i> Permission roles lengkap</li>
+                    <li><i class="fas fa-cat"></i> Voice channel diatur</li>
+                </ul>
+                <div class="fungsi-lucu">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Server lebih aman & terproteksi!</span>
+                </div>
+                <button class="btn-lucu" onclick="event.stopPropagation(); bukaModal('Standard Setup', 15000)">
+                    <i class="fas fa-paw"></i> Ambil Paket
+                </button>
+            </div>
+
+            <!-- PAKET 4 - BEST SELLER -->
+            <div class="paket-card best" onclick="pilihPaket('Full Setup', 25000)">
+                <div class="best-stamp">🐱 BEST SELLER</div>
+                <div class="paket-icon" style="background: #FFD700;">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="paket-header">
+                    <h3>Full Setup <i class="fas fa-star" style="color: gold;"></i></h3>
+                    <div class="harga">25K</div>
+                </div>
+                <ul class="fitur-list">
+                    <li><i class="fas fa-cat"></i> Semua fitur Paket 15K</li>
+                    <li><i class="fas fa-cat"></i> Setup bot MEE6/Dyno</li>
+                    <li><i class="fas fa-cat"></i> Auto role & welcome</li>
+                    <li><i class="fas fa-cat"></i> Leveling system</li>
+                    <li><i class="fas fa-cat"></i> BONUS Template lucu</li>
+                </ul>
+                <div class="fungsi-lucu">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Auto rapi, auto welcome, auto lucu! 🐱</span>
+                </div>
+                <button class="btn-lucu" onclick="event.stopPropagation(); bukaModal('Full Setup', 25000)" style="background: #FFD700; color: #333;">
+                    <i class="fas fa-paw"></i> Ambil Best Seller
+                </button>
+            </div>
+        </div>
+
+        <!-- INFO LUCU -->
+        <div class="info-lucu">
+            <div class="info-item">
+                <i class="fas fa-cat"></i>
+                <div>
+                    <h4>Proses Cepat 30 Menit</h4>
+                    <p>Langsung dikerjakan setelah pembayaran</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-heart"></i>
+                <div>
+                    <h4>Garansi Suka-Suka</h4>
+                    <p>Revisi sampe kamu happy!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER LUCU -->
+        <div class="footer-lucu">
+            <div class="paw-prints">
+                <i class="fas fa-paw"></i>
+                <i class="fas fa-paw"></i>
+                <i class="fas fa-paw"></i>
+            </div>
+            <p>© 2026 Cat Discord Studio by Junz</p>
+            <p class="cat-emoji">🐱 😺 😸 😻</p>
+        </div>
+    </div>
+
+    <!-- MODAL ORDER -->
+    <div id="modalOrder" class="modal-lucu">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-cat"></i> Order Yuk!</h2>
+                <div class="close" onclick="tutupModal()">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="cat-avatar">
+                <i class="fas fa-cat"></i>
+                <span>🐾</span>
+            </div>
+
+            <div class="form-group">
+                <label><i class="fas fa-gift"></i> Paket Pilihan</label>
+                <input type="text" id="paketPilih" readonly>
+            </div>
+
+            <div class="form-group">
+                <label><i class="fas fa-tag"></i> Harga</label>
+                <input type="text" id="hargaPilih" readonly>
+            </div>
+
+            <div class="form-group">
+                <label><i class="fas fa-user"></i> Nama Kamu</label>
+                <input type="text" id="namaUser" placeholder="Contoh: Junz">
+            </div>
+
+            <div class="form-group">
+                <label><i class="fab fa-discord"></i> ID Discord</label>
+                <input type="text" id="discordUser" placeholder="Contoh: junz#1234">
+            </div>
+
+            <div class="form-group">
+                <label><i class="fas fa-link"></i> Link Server</label>
+                <input type="url" id="linkServer" placeholder="https://discord.gg/...">
+            </div>
+
+            <div class="form-group">
+                <label><i class="fas fa-pencil"></i> Catatan (opsional)</label>
+                <textarea id="catatanUser" placeholder="Kasih tau request lucu kamu..." rows="2"></textarea>
+            </div>
+
+            <div class="cat-note">
+                <i class="fas fa-shield-alt"></i>
+                <span>Aman kok, langsung ke WA Junz 🐱</span>
+            </div>
+
+            <button class="btn-wa-lucu" onclick="kirimKeWA()">
+                <i class="fab fa-whatsapp"></i> Kirim ke Junz
+                <i class="fas fa-paw"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIF -->
+    <div id="toastNotif" class="toast-lucu">
+        <i class="fas fa-cat"></i>
+        <span>Meow! Notifikasi terkirim ke Junz!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                  </html>
